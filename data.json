@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Alice in Wonderland",
+        "isbn": 2,
+        "pages": 200
+    },
+    {
+        "title": "The Lion, the Witch and the Wardrobe",
+        "isbn": 3,
+        "pages": 300
+    },
+    {
+        "title": "The Hobbit",
+        "isbn": 4,
+        "pages": 400
+    },
+    {
+        "title": "A Story of Yesterday",
+        "isbn": 5,
+        "pages": 350
+    },
+    {
+        "title": "Something Wicked This Way Comes",
+        "isbn": 6,
+        "pages": 250
+    },
+    {
+        "title": "The Phantom Tollbooth",
+        "isbn": 7,
+        "pages": 150
+    },
+    {
+        "title": "The Wind in the Willows",
+        "isbn": 8,
+        "pages": 500
+    },
+    {
+        "title": "The Secret Garden",
+        "isbn": 9,
+        "pages": 450
+    },
+    {
+        "title": "The Little Prince",
+        "isbn": 10,
+        "pages": 100
+    },
+    {
+        "title": "The Tale of Peter Rabbit",
+        "isbn": 11,
+        "pages": 50
+    }
+]
