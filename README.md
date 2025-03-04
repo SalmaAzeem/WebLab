@@ -28,23 +28,23 @@
 ### Postman output
 1. Fetching all Books
 
-![Fetching Books](image.png)
+![Fetching Books](images/image.png)
 
 2. Fetching Book by ISBN
 
-![Fetching Book by ISBN](image-1.png) 
+![Fetching Book by ISBN](images/image-1.png) 
 
 3. Creating Book
 
-![Create Book](image-2.png)
+![Create Book](images/image-2.png)
 
 4. Updating Book
 
-![Update Book](image-3.png)
+![Update Book](images/image-3.png)
 
 5. Deleting Book
 
-![Delete Book](image-4.png)
+![Delete Book](images/image-4.png)
 
 ### Resources
 - [Node.js MongoDB tutorial](https://www.w3schools.com/nodejs/nodejs_mongodb_find.asp)
