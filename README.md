@@ -26,6 +26,10 @@
 - Imported data from data.json into LabTaskDB database using MongoDB Compass.
 
 ### Postman output
+1. Fetching Data Without Token
+
+![Invalid Token](images/image-7.png)
+
 1. Fetching all Books
 
 ![Fetching Books](images/image.png)
@@ -45,6 +49,14 @@
 5. Deleting Book
 
 ![Delete Book](images/image-4.png)
+
+6. Returning Book
+
+![Return Book](images/image-5.png)
+
+7. Borrowing Book
+
+![Borrow Book](images/image-6.png)
 
 ### Resources
 - [Node.js MongoDB tutorial](https://www.w3schools.com/nodejs/nodejs_mongodb_find.asp)
