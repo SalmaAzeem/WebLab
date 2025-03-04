@@ -87,14 +87,15 @@ router.put('/:isbn', async (req, res) => {
 router.put('/borrow/:isbn', async (req, res) => {
     try {
         let isbn = Number(req.params.isbn);
-        const book = await Book.findById(isbn);
+        const updatedDocument = {
+            $set: {
+                status: "checked-out"
+            },
+        }
+        const book = await Book.findOneAndUpdate({isbn}, updatedDocument, {new: true});
         if (!book) {
             return res.status(404).json({message: "Book not found"});
         }
-        if (book.status == "checked-out") {
-            return res.status(404).json({message: "Book is not available"});
-        }
-        book.status = "checked-out";
         res.json(book);
         console.log(book);
     } catch (err) {
@@ -107,14 +108,15 @@ router.put('/borrow/:isbn', async (req, res) => {
 router.put('/return/:isbn', async (req, res) => {
     try {
         let isbn = Number(req.params.isbn);
-        const book = await Book.findById(isbn);
+        const updatedDocument = {
+            $set: {
+                status: "available"
+            },
+        }
+        const book = await Book.findOneAndUpdate({isbn}, updatedDocument, {new: true});
         if (!book) {
             return res.status(404).json({message: "Book not found"});
         }
-        if (book.status == "available") {
-            return res.status(404).json({message: "Book is already checked-out"});
-        }
-        book.status = "available";
         res.json(book);
         console.log(book);
     } catch (err) {
